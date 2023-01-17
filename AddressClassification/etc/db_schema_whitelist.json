@@ -1,0 +1,12 @@
+{
+    "quote_address": {
+        "column": {
+            "address_classification": true
+        }
+    },
+    "sales_order_address": {
+        "column": {
+            "address_classification": true
+        }
+    }
+}

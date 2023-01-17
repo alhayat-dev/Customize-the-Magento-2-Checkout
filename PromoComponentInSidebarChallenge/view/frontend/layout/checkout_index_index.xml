@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="checkout" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <referenceBlock name="checkout.root">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="checkout" xsi:type="array">
+                                <item name="children" xsi:type="array">
+                                    <item name="sidebar" xsi:type="array">
+                                        <item name="children" xsi:type="array">
+                                            <item name="summary" xsi:type="array">
+                                                <item name="config" xsi:type="array">
+                                                    <item name="template" xsi:type="string">MageChamps_PromoComponentInSidebarChallenge/summary</item>
+                                                </item>
+                                                <item name="children" xsi:type="array">
+                                                    <item name="sidebar-promo-banner" xsi:type="array">
+                                                        <item name="component" xsi:type="string">MageChamps_PromoComponentInSidebarChallenge/js/view/summary/promo-banner</item>
+                                                        <item name="sortOrder" xsi:type="string">1</item>
+                                                        <item name="config" xsi:type="array">
+                                                            <item name="messageItemsInCart" xsi:type="string">Add $XX.XX of items to your cart to receive a promo code for 10% off your entire order.</item>
+                                                            <item name="messageFreeShipping" xsi:type="string">Congrats! Use promo code GET100 for 10% off your entire order.</item>
+                                                        </item>
+                                                        <item name="displayArea" xsi:type="string">promo-banner</item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,50 @@
+& when (@media-common = true) {
+    .mage-champs-discount {
+        padding: 22px 30px;
+
+        .payment-option._active .payment-option-title .action-toggle:after {
+            content: '\e621';
+        }
+
+        .payment-option-title {
+            cursor: pointer;
+            border-bottom: 1px solid #cccccc;
+            padding: 20px 0;
+
+            .action-toggle {
+                color: #006bb4;
+                display: inline-block;
+                text-decoration: none;
+
+                &::after {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #757575;
+                    content: '\e622';
+                    font-family: 'luma-icons';
+                    margin: 0 0 0 10px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    font-weight: normal;
+                    overflow: hidden;
+                    speak: none;
+                    text-align: center;
+                }
+            }
+        }
+
+        .payment-option-content {
+            .form-discount {
+                label {
+                    display: none;
+                }
+
+                .payment-option-inner {
+                    margin: 0 0 20px;
+                }
+            }
+        }
+    }
+}

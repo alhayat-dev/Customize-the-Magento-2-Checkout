@@ -1,0 +1,21 @@
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+?>
+<div id="counter-wrapper" data-bind="scope: 'counterScope'">
+    <p>Counter: <span data-bind="text: counter"></span></p>
+    <button data-bind="click: increment">Increment</button>
+</div>
+
+<script type="text/x-magento-init">
+{
+    "#counter-wrapper": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "counterScope": {
+                    "component": "MageChamps_CounterExample/js/counter"
+                }
+            }
+        }
+    }
+}
+</script>
